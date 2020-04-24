@@ -1,3 +1,4 @@
+# find the partition in the unsorted array (choose the first position as pivot)
 def LomutoPartition(A, lo, hi):
     p = A[lo]
     s = lo

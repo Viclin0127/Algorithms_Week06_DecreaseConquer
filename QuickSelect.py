@@ -1,3 +1,6 @@
+# using Partition method to find kth element in unsorted array
+# first, find the A[lo] as pivot to find the partition position
+# if that position is larger, go left, otherwise, go right
 from LomutoPartitioning import LomutoPartition
 
 def QuickSelect(A, lo, hi, k):

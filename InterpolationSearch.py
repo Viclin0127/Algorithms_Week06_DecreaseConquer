@@ -2,7 +2,7 @@
 def InterpolationSearch(A,k):
     lo = 0
     hi = len(A)-1
-    while lo < hi:
+    while lo <= hi:
         if A[lo] > k or A[hi] < k:
             break
         if lo == hi:

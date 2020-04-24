@@ -16,8 +16,11 @@ def LomutoPartition(A, lo, hi):
     return s
 
 def test():
-    A = [4,7,9,3,5]
-    print(LomutoPartition(A, 2, 3))
+    A = [7,3,4,8,10,9]
+
+    # Order of array A would be modified
+    print(LomutoPartition(A, 0, 5))
+    print(A)
 if __name__ == "__main__" :
     test()
 

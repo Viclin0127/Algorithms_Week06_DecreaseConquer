@@ -6,6 +6,9 @@ from LomutoPartitioning import LomutoPartition
 def QuickSelect(A, lo, hi, k):
     s = LomutoPartition(A, lo, hi)
     if s - lo == k - 1:
+
+        # we can find that the order of array A has already been modified due to Lomuto method
+        print(A)
         return A[s]
     else:
         if s - lo > k - 1:
@@ -13,7 +16,7 @@ def QuickSelect(A, lo, hi, k):
         else:
             return QuickSelect(A, s+1, hi, (k-1) - (s-lo))
 def test():
-    A = [3,1,4,5,9,2,6,8]
-    print(QuickSelect(A, 0, len(A)-1, 7))
+    A = [7,3,4,8,10,9]
+    print(QuickSelect(A, 0, len(A)-1, 1))
 if __name__ =="__main__":
     test()
